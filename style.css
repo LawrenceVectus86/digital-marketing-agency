@@ -216,6 +216,13 @@ body {
 
 .icon-background {
     background-color: #156AFB;
-    border-radius: 50%;
+    border-radius: 60%;
     padding: 5px;
+}
+
+@media (max-width: 768px) {
+    .mobile-image {
+        width: 100%;
+        height: auto;
+    }
 }
