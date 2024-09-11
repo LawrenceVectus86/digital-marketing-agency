@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.21.0/dist/lucide.min.js"></script>
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-white text-black max-w-7xl  mx-auto">
+        <!-- Header Section -->
+        <header class="flex justify-between items-center p-4 bg-white w-full fixed top-0 left-0 z-50 shadow-md">
+            <!-- Logo -->
+            <div class="flex space-x-1">
+                <img src="img/logo.png" alt="Logo" class="w-9 h-9">
+            </div>
+        
+            <!-- Navbar for large screens -->
+            <nav class="hidden md:flex space-x-4 font-medium">
+                <a href="#home" class="hover:text-blue-600">Home</a>
+                <a href="#service" class="hover:text-blue-600">Services</a>
+                <a href="#agency" class="hover:text-blue-600">About Us</a>
+                <a href="#portfolio" class="hover:text-blue-600">Portfolio</a>
+                <a href="#contact" class="hover:text-blue-600">Contacts</a>
+            </nav>
+        
+            <!-- Let's Chat button (visible on all screen sizes) -->
+            <button class="bg-blue-600 text-white px-4 py-2 rounded-lg">Let's Chat</button>
+        
+            <!-- Menu icon for mobile -->
+            <div class="menu-icon md:hidden ml-4">
+                <button id="menu-button" class="text-blue-600 text-2xl">☰</button>
+            </div>
+        </header>
+        
+        <!-- Mobile Menu -->
+        <nav id="mobile-menu" class="hidden flex-col bg-gray-200 md:hidden fixed top-16 left-0 w-full z-40">
+            <div class="flex flex-col space-y-4 p-4">
+                <a href="#home" class="hover:text-blue-600">Home</a>
+                <a href="#service" class="hover:text-blue-600">Services</a>
+                <a href="#agency" class="hover:text-blue-600">About Us</a>
+                <a href="#portfolio" class="hover:text-blue-600">Portfolio</a>
+                <a href="#contact" class="hover:text-blue-600">Contacts</a>
+            </div>
+        </nav>
+        
+
+
+        <!-- Main Section -->
+        <main class="flex flex-col md:flex-row items-center justify-between p-8 md:p-16" id="home">
+            <div class="md:w-1/2 space-y-6">
+                <h1 class="text-4xl md:text-5xl font-bold">
+                    Maximize Your Business Potential with Our <span class="text-blue-600">Digital Marketing</span> Expertise.
+                </h1>
+                <p class="text-gray-600 font-normal">
+                    Partner with us to boost your online presence and achieve measurable results.
+                </p>
+                <button class="bg-blue-600 text-white px-6 py-3 rounded-full">
+                    Contact Us
+                </button>
+            </div>
+            <div class="md:w-1/2 relative mt-8 md:mt-0">
+                <img src="img/banner-image.png" alt="Laptop mockup" class="w-full">
+                <div class="absolute top-0 right-0 text-orange-500 text-4xl">+</div>
+                <div class="absolute bottom-0 left-0 text-blue-500 text-4xl">•</div>
+            </div>
+        
+    </div>
+
+    <!-- Marketing Services Section -->
+    <div class="max-w-6xl mx-auto py-12 px-4" id="service">
+        <h2 class="text-3xl font-bold mb-2">OUR MARKETING SERVICES</h2>
+        <p class="text-blue-600 mb-8">Strategic services drive digital success with tailored, comprehensive approaches</p>
+        <div class="grid gap-6" id="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); justify-content: center;">
+            
+        </div>
+    </div>
+
+    <!-- Landing 3 -->
+
+    <div class="container mx-auto px-4 py-8 max-w-6xl" id="agency">
+        <div class="flex items-center justify-between mb-6">
+            <h1 class="text-3xl font-bold">WE ARE DIGITAL<br>MARKETING AGENCY</h1>
+            <div class="flex">
+                <div class="w-4 h-4 bg-sky-300 mr-1"></div>
+                <div class="w-4 h-4 bg-blue-600"></div>
+            </div>
+        </div>
+        
+        <div class="flex flex-col md:flex-row gap-8 mb-12">
+            <div class="md:w-1/2">
+                <img src="img/illustrasi.png" alt="Team meeting" class="w-full h-auto rounded-lg shadow-lg mobile-image">
+            </div>
+            <div class="md:w-1/2">
+                <p class="text-lg">
+                    We are a dynamic digital marketing agency dedicated to propelling
+                    businesses forward through strategic online solutions. Our team of
+                    experts specialize in SEO, Content Marketing, Social Media Management,
+                    Advertising, and web design.
+                </p>
+            </div>
+        </div>
+
+        <div class="flex items-center justify-between mb-6">
+            <h2 class="text-2xl font-bold">WHY CHOOSE US?</h2>
+            <div class="flex">
+                <div class="w-4 h-4 bg-sky-300 mr-1"></div>
+                <div class="w-4 h-4 bg-blue-600"></div>
+            </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-8">
+            <div class="md:w-1/2 space-y-6">
+                <div class="flex items-center rounded-lg p-4" style="background: rgba(248, 248, 248, 1);">
+                    <div class="bg-blue-500 p-3 rounded-full mr-4 flex-shrink-0">
+                        <img src="img/Idea Sharing.png" alt="" class="w-7">
+                    </div>
+                    <p class="font-semibold">Solutions Tailored Specifically to Your Business Needs</p>
+                </div>
+                <div class="flex items-center rounded-lg p-4" style="background: rgba(248, 248, 248, 1);">
+                    <div class="bg-blue-500 p-3 rounded-full mr-4 flex-shrink-0">
+                        <img src="img/Idea.png" alt="Icon" class="w-7">
+                    </div>
+                    <p class="font-semibold">Creative Excellence Elevates Every Project</p>
+                </div>
+                <div class="flex items-center rounded-lg p-4" style="background: rgba(248, 248, 248, 1);">
+                    <div class="bg-blue-500 p-3 rounded-full mr-4 flex-shrink-0">
+                        <img src="img/Goal.png" alt="icon-goal" class="w-7">
+                    </div>
+                    <p class="font-semibold">Client Satisfaction is Our Main Focus</p>
+                </div>
+            </div>
+            <div class="md:w-1/2 relative" style="background: rgba(248, 248, 248, 1);">
+                <img src="img/ilustrasi_2.png" alt="Team collaboration" class="w-full h-auto rounded-lg shadow-lg mobile-image">
+                <div class="absolute top-2 right-2 md:hidden">
+                    <div class="w-2 h-2 bg-gray-300 rounded-full mb-1"></div>
+                    <div class="w-2 h-2 bg-gray-300 rounded-full mb-1"></div>
+                    <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page5 -->
+
+    <div class="container mx-auto px-4 py-8 max-w-6xl" id="portfolio">
+        <div class="mt-16">
+            <div class="flex items-center justify-between mb-6">
+                <h2 class="text-2xl font-bold">OUR WORKING PROCESS</h2>
+                <div class="flex">
+                    <div class="w-4 h-4 bg-sky-300 mr-1"></div>
+                    <div class="w-4 h-4 bg-blue-600"></div>
+                </div>
+            </div>
+
+            <div class="space-y-4" id="processItems">
+                <!-- Proses in JS -->
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-5xl mx-auto mt-20 px-4 px-8" style="margin-bottom: 200px;">
+        <div class="w-full max-w-5xl">
+            <h1 class="text-3xl font-bold mb-8">PRICING PLANS</h1>
+            <div class="flex flex-col md:flex-row gap-10 items-stretch">
+                <!-- Starter Plan -->
+                <div class="bg-[#EEF7FF] rounded-3xl shadow-md p-6 flex-1 flex flex-col">
+                    <div class="flex-grow">
+                        <h2 class="text-xl font-semibold mb-4">Starter Plan</h2>
+                        <p class="text-4xl font-bold text-blue-500 mb-6">$500</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2">•</span>
+                                Responsive website design and development (1 page)
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2">•</span>
+                                Basic SEO
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="w-full bg-[#156AFB] text-white py-2 rounded-2xl hover:bg-blue-600 transition duration-300 mt-auto">Book Now</button>
+                </div>
+                
+                <!-- Business Plan -->
+                <div class="bg-[#156AFB] rounded-3xl shadow-md p-8 flex-1 text-white md:scale-110 md:z-10 flex flex-col">
+                    <div class="flex-grow">
+                        <h2 class="text-2xl font-semibold mb-4">Business Plan</h2>
+                        <p class="text-5xl font-bold mb-6">$1000</p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <span class="mr-2">•</span>
+                                Responsive website design and development (Max 10 pages)
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-2">•</span>
+                                Advanced SEO
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-2">•</span>
+                                Social media management
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-2">•</span>
+                                PPC advertising campaign
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="w-full bg-white text-blue-500 py-3 rounded-2xl hover:bg-gray-100 transition duration-300 mt-auto">Book Now</button>
+                </div>
+                
+                <!-- Premium Plan -->
+                <div class="bg-[#EEF7FF] rounded-3xl shadow-md p-6 flex-1 flex flex-col">
+                    <div class="flex-grow">
+                        <h2 class="text-xl font-semibold mb-4">Premium Plan</h2>
+                        <p class="text-4xl font-bold text-blue-500 mb-6">$2000</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2">•</span>
+                                Responsive website design and development (Max 10 pages)
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2">•</span>
+                                Advanced SEO
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2">•</span>
+                                Social media management
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2">•</span>
+                                PPC advertising campaign
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2">•</span>
+                                Advanced Business plan
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2">•</span>
+                                Regular content creation
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2">•</span>
+                                Performance analysis and monthly reporting
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="w-full bg-[#156AFB] text-white py-2 rounded-2xl hover:bg-blue-600 transition duration-300 mt-auto">Book Now</button>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- Ending -->
+
+      <div class="max-w-6xl mx-auto px-4 px-8">
+        <div class="bg-blue-50 rounded-b-3xl overflow-hidden relative">
+            <div class="absolute  opacity-20 z-10">
+                <img src="img/Ellipse 45.png" alt="">
+            </div>
+            <div class="absolute bottom-0 right-0 w-48 h-48 bg-gray-300 rounded-full translate-x-1/4 translate-y-1/4">
+            </div>
+            <div class="py-20 px-8 relative z-10">
+                <h1 class="text-4xl font-bold mb-4 max-w-xl">"Stand out online and grow your branding and sales"</h1>
+                <button class="bg-blue-600 text-white px-6 py-2 rounded-md font-semibold">Start Now</button>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="mt-12 pb-8" id="contact">
+            <div class="flex flex-wrap justify-between items-start">
+                <!-- Logo and Description -->
+                <div class="w-full lg:w-1/3 mb-8 lg:mb-0">
+                    <div class="flex items-center mb-4">
+                        <div class="flex space-x-1 mr-2">
+                            <img src="img/logo.png" alt="Logo" class="w-9 h-9 items-center">
+                        </div>
+                        <h2 class="text-lg font-semibold">Deborah Digital Marketing</h2>
+                    </div>
+                    <p class="text-gray-600 mr-5" style="font-size: 15px;">
+                        Deborah Digital Marketing is a leading digital marketing agency dedicated to driving success for businesses online. With expertise in SEO, PPC, social media, content creation, and more, we offer tailored solutions to maximize ROI.
+                    </p>
+                </div>
+
+                <!-- Services and Links -->
+                <div class="w-full lg:w-2/3 flex flex-wrap">
+                    <div class="w-1/2 lg:w-1/4 mb-8">
+                        <h3 class="font-semibold mb-4">Our Services</h3>
+                        <ul class="text-sm space-y-2">
+                            <li>SEO Marketing</li>
+                            <li>Content Marketing</li>
+                            <li>Email Marketing</li>
+                            <li>Google PPC</li>
+                        </ul>
+                    </div>
+                    <div class="w-1/2 lg:w-1/4 mb-8">
+                        <h3 class="font-semibold mb-4">Explore More</h3>
+                        <ul class="text-sm space-y-2">
+                            <li>About Us</li>
+                            <li>Features</li>
+                            <li>Our Works</li>
+                            <li>Resource</li>
+                        </ul>
+                    </div>
+                    <div class="w-full lg:w-1/2">
+                        <h3 class="font-semibold mb-4">Contact Us</h3>
+                        <ul class="text-sm space-y-4">
+                            <li class="flex items-center text-[#156AFB]">
+                                <img src="img/mail-open-svgrepo-com (1).svg" alt="Mail Logo" class="w-7 h-7 icon-background mr-2 ">
+                                <span>info@deborah-tech.com</span>
+                            </li>
+                            <li class="flex items-center text-[#156AFB]">
+                                <img src="img/call-receive-svgrepo-com.svg" alt="Mail Logo" class="w-7 h-7 icon-background mr-2 ">
+                                +62 82144234649
+                            </li>
+                            <li class="flex items-start text-[#156AFB]">
+                                <img src="img/location-pin-alt-1-svgrepo-com.svg" alt="Mail Logo" class="w-7 h-7 icon-background mr-2 ">
+                                SOHO Collins Boulevard Collins Boulevard F.O.R (SOHO) A 0206, Jl. MH. Thamrin Kav. 7, Panunggangan, Kec. Pinang, Kota Tangerang, Banten 15143
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="border-t border-gray-200 pt-4 pb-8 items-center text-sm">
+            <p style="font-size: 15px; margin-bottom: 10px;">Terms & Condition</p>
+            <p style="font-size: 15px; font-weight: 200;">Deborah Digital Marketing 2024 © All right reserved</p>
+        </div>
+    </div>
+</main>
+</body>
+</html>
+
+    <!-- JS File -->
+    <script src="app.js"></script>
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+    
+        // Event listener untuk toggle menu saat hamburger diklik
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
