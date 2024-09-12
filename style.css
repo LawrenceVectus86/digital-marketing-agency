@@ -223,6 +223,6 @@ body {
 @media (max-width: 768px) {
     .mobile-image {
         width: 100%;
-        height: auto;
+        height: 100%;
     }
 }
